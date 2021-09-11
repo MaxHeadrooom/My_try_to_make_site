@@ -3,19 +3,49 @@
 <head>
     <meta charset="UTF-8">
     <title>Отзывы и предложения</title>
+    <style type="text/css">
+        .user {
+         width: 308px; /* Ширина поля с учетом padding */
+         height: 46px; /* Высота */
+         background: #dad7c5 url(images/input.png) no-repeat; /* Фон */
+         padding: 0 10px; /* Поля */
+         border: none; /* Убираем рамку */
+         font-size: 1em; /* Размер текста */
+         line-height: 46px; /* Выравниваем по  центру в IE */
+        }
+       </style>
+       <style type="text/css">
+        .comment {
+         width: 310px; /* Ширина рисунка */
+         height: 176px; /* Высота рисунка */
+         background: #dad7c5 url(images/textarea.png) no-repeat; /* Фон */
+        }
+        .comment textarea {
+         border: none; /* Убираем рамку */
+         background: transparent; /* Прозрачный фон */
+         margin: 3px; /* Отступы от линии */
+         width: 300px; /* Ширина поля */
+         padding: 5px 0 5px 5px; /* Поля в тексте */
+         height: 160px; /* Высота */
+        }
+       </style>
 </head>
 <body>
     <style>p { font-size: 30px; }</style>
     <p>Отзывы</p>
     <form action="">
-        <input type="text" size="30" placeholder="Логин"><br>
-        <input type="checkbox" checked="checked"><br>
-        <input type="radio" name="radio"><br>
-        <input type="file"><br>
+        <input type="text" class="user" size="30" placeholder="Логин"><br>
+        <pre>Вы делали покупку на нашем сайте?</pre>
+        <input type="radio" name="radio"> <pre>Да</pre><br>
+        <input type="radio" name="radio"> <pre>Нет</pre><br>
+        <pre>Ваша оценка:</pre>
+        <pre> 1  2  3  4  5</pre>
+        <pre><input type="radio" name="radio"><input type="radio" name="radio"><input type="radio" name="radio"><input type="radio" name="radio"><input type="radio" name="radio"></pre>
+        <pre>Пояснение:</pre>
+        <div class="comment"><textarea cols="10" rows="10"></textarea></div>
         <input type="submit" value="Сохранить"><br>
         <input type="reset" value="Очистить"><br>
-        <input type="button" value="просто кнопка">
-
     </form>
+    <pre>Наше место нахождение: <a href="https://www.google.ru/maps/place/%D0%A5%D0%BE%D0%B9,+%D0%97%D0%B0%D0%BF%D0%B0%D0%B4%D0%BD%D1%8B%D0%B9+%D0%90%D0%B7%D0%B5%D1%80%D0%B1%D0%B0%D0%B9%D0%B4%D0%B6%D0%B0%D0%BD,+%D0%98%D1%80%D0%B0%D0%BD/@38.5469913,44.9400249,13.54z/data=!4m5!3m4!1s0x40116a8584603073:0x4da1db9bbdbb884c!8m2!3d38.5534106!4d44.9396623">Открыть</a></pre>
 </body>
 </html>
