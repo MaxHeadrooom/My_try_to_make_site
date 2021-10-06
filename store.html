@@ -1,33 +1,59 @@
 <!DOCTYPE html>
 <html lang="en">
+<html lang="ru">
 <head>
     <meta charset="UTF-8">
 
-    <title></title>
-    <style type="text/css">
-        BODY { margin-bottom: 50px; }
-        #footer {
-         position: fixed; /* Фиксированное положение */
-         left: 0; bottom: 0; /* Левый нижний угол */
-         padding: 10px; /* Поля вокруг текста */
-         background: #39b54a; /* Цвет фона */
-         color: #fff; /* Цвет текста */
-         width: 100%; /* Ширина слоя */
+@ -15,26 +15,71 @@
+         width: 20%; /* Ширина слоя */
         }
        </style>
+
 </head>
 <body>
     <style>
+    .page-header {
+    background: #ff5e00;
+    margin-bottom: 10px;
+    border-bottom: 10px solid #E1E1E1;
+       }
+    </style>
+    <style>
         h1 { font-size: 30px; }    
     </style>
+    <header class = "page-header">
         <h1>Главная</h1>
     <style>
         h2 { font-size: 20px; }
+        <style>
+            h2 { font-size: 20px; }
+        </style>
+            <h2>О магазине</h2>
+        <style>
+        pre { font-size: 20px; }
     </style>
         <h2>О магазине</h2>
     <style>
         pre { font-size: 20px; }
+    a {
+         text-decoration: none; /* Убираем подчёркивание */
+        }
     </style>
+    <body link="red" vlink="#000000" alink="#000000"></body>
+    <style type="text/css">
+        A {
+         color: #000000; /* Цвет ссылок */
+        }
+        A:hover {
+         color: #ff0707; /* Цвет ссылок */
+        }
+        A:visited {
+         color: #000000; /* Цвет посещенных ссылок */
+        }
+        A:active {
+         color: #000000; 
+        }
+       </style>
     <pre>Pintoo - тайваньская компания, которая производит пазлы различных видов,
 в ассортимент фирмы входят пазлы размером от 300 до 2000 деталей.   
 Pintoo для изображений на пазлах использует репродукции известнейших художников,
@@ -36,5 +62,23 @@ Pintoo для изображений на пазлах использует ре
 Для просмотра нашей продукции предлагаем перейти в наш <a href="Каталог.html">каталог</a>.</pre>
 <img src="https://www.wite.ru/images/cms/data/igrushki_razdel/pazzle/step/Plastic_Puzzle/pazl_v_pazle_parusnik1.jpg">
 <div id="footer">Отзывы: <a href="About_us.html">Кликай</a></div>
+<style>
+    .photo img {
+     padding: 20px; /* Поля вокруг изображения */
+     margin-right: 10px; /* Отступ справа */
+     margin-bottom: 10px; /* Отступ снизу */
+     outline: 1px solid #666; /* Параметры рамки */
+     background: #f0f0f0; /* Цвет фона */
+     float: left; /* Обтекание по правому краю */
+     outline-style: groove;
+     outline-width: 5px;
+     outline-color: #ff0707;
+    }
+</style>
+<div class = "photo">
+    <img src="https://www.wite.ru/images/cms/data/igrushki_razdel/pazzle/step/Plastic_Puzzle/pazl_v_pazle_parusnik1.jpg">   
+</div>
+<body link="red" vlink="#000000" alink="#000000"></body>
+    <div id="footer">Отзывы: <a href="About_us.html">Кликай</a></div>
 </body>
 </html>
