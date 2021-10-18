@@ -1,62 +1,64 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <link rel="shortcut icon" href="US_$1_obverse.jpg" type="image/jpg">
+    <link rel="stylesheet" href="1.css">
     <meta charset="UTF-8">
     <title>Каталог</title>
-    <style type="text/css">
-        BODY { margin-bottom: 50px; }
-        #footer {
-         position: fixed; /* Фиксированное положение */
-         left: 0; bottom: 0; /* Левый нижний угол */
-         padding: 10px; /* Поля вокруг текста */
-         background: #5292c7; /* Цвет фона */
-         color: #FFFFFF; /* Цвет текста */
-         width: 30%; /* Ширина слоя */
-        }
-       </style>
-    <style>
-        a {
-             text-decoration: none; /* Убираем подчёркивание */
-            }
-    </style>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 </head>
 <body>
-    <body link="red" vlink="#000000" alink="#000000"></body>
-    <style type="text/css">
-        A {
-         color: #000000; /* Цвет ссылок */
-        }
-        A:hover {
-         color: #ff0707; /* Цвет ссылок */
-        }
-        A:visited {
-         color: #000000; /* Цвет посещенных ссылок */
-        }
-        A:active {
-         color: #000000; 
-        }
-    </style>
+    <ul class="header-footer" >
+        <a class="menu-item" href="store.html">
+            <style>
+                h1 { font-size: 30px; }    
+            </style>
+            <li>Главная</li>
+        </a>
+        <a class="menu-item" href="Каталог.html">
+            <h1>Каталог</h1>
+        </a>
+        <a class="menu-item" href="About_us.html">
+            <li>О нас</li>
+        </a>
+        <a class="menu-item" href="Доставка.html">
+            <li>Доставка</li>
+        </a>
+    </ul>
     <div id="footer">Открыты для отзывов и предложений: <a href="About_us.html">Отзывы</a></a></div>
     <style>
         img {
          border: 10px solid #00a8e1;
         }
     </style>
-    <img src="https://shopudachi.ru/upload/iblock/99a/99a3c97a3b3d939c4a1afe5ad94c602b.jpg" alt="Фотография" width="700" height="450">
+    
     <style>
         pre { font-size: 15px; }    
     </style>
-<pre>Пазл Pintoo 1000 деталей: Эми Стюарт. Бутылка желаний на пляже
-Цена:1 209 р.
-<a href="Товар1.html">Купить</a>
-<img src="https://shopudachi.ru/upload/iblock/cb9/cb962248c24f29d68961757bf606d777.jpg" alt="Фотография" width="700" height="450">
-    <pre>Пазл Pintoo 1000 деталей: Закат в Шмидене
-Цена:1300 рублей.
-<a href="Товар2.html">Купить</a>
-<img src="https://shopudachi.ru/upload/iblock/1fe/1fed5f4ae50bdc7971fade14cee8a396.jpg" alt="Фотография" width="500" height="500">
-    <pre>Пазл Pintoo 1600 деталей: Мост Квинсборо. Манхэттен
-Цена:2 074 рублей.
-<a href="Товар3.html">Купить</a>
+<div class="item-card">
+    <a href="Товар1.html"><img class="item-img" src="https://shopudachi.ru/upload/iblock/99a/99a3c97a3b3d939c4a1afe5ad94c602b.jpg" alt="Лазанья" width="295" height="235"></a>
+    <br>
+    <h3 class="name"></h3>
+    <h2 style = color:#cc0000; class="price">1209</h2>
+    <p style = color:#b8cc00; class="description"> Пазл Pintoo 1000 деталей: Эми Стюарт. Бутылка желаний на пляже </p>
+    <button class="btn btn-danger"><a href="Товар1.html">Купить</a></button>
+</div>
+<div class="item-card">
+    <a href="Товар1.html"><img class="item-img" src="https://shopudachi.ru/upload/iblock/cb9/cb962248c24f29d68961757bf606d777.jpg" alt="Лазанья" width="295" height="235"></a>
+    <br>
+    <h3 class="name"></h3>
+    <h2 style = color:#d9ff00; class="price">1300</h2>
+    <p style = color:#b8cc00; class="description"> Пазл Pintoo 1000 деталей: Закат в Шмидене </p>
+    <button class="btn btn-danger"><a href="Товар2.html">Купить</a></button>
+</div>
+<div class="item-card">
+    <a href="Товар1.html"><img class="item-img" src="https://shopudachi.ru/upload/iblock/1fe/1fed5f4ae50bdc7971fade14cee8a396.jpg" alt="Лазанья" width="295" height="235"></a>
+    <br>
+    <h3 class="name"></h3>
+    <h2 style = color:#c100fc; class="price">2074</h2>
+    <p style = color:#b8cc00; class="description"> Пазл Pintoo 1600 деталей: Мост Квинсборо. Манхэттен </p>
+    <button class="btn btn-danger"><a href="Товар3.html">Купить</a></button>
+</div>
 </pre>
 </body>
 </html>
