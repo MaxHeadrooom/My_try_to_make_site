@@ -3,3 +3,5 @@
 3)SELECT DISTINCT(SUBSTR(date, 1, 4)) FROM accounts;
 4)SELECT COUNT(*) AS 'total_items' FROM product;
 5)SELECT AVG(CAST((julianday('now') - julianday(date)) AS INTEGER) / 365) FROM accounts WHERE (CAST((julianday('now') - julianday(regdate)) AS INTEGER) <= 60);
+(использовал julianday() нашел тут: https://codernotes.ru/articles/bazy-dannyh-t-sql/funkcii-daty-i-vremeni-v-sqlite.html и соответсвтенно CAST("field15" AS INTEGER) для
+изменения строки в число)
