@@ -1,0 +1,1 @@
+1)UPDATE accounts SET regdate = SUBSTR(regdate, 7, 4) || '-' || SUBSTR(regdate, 4, 2) || '-' || SUBSTR(regdate, 1, 2);
