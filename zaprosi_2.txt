@@ -17,6 +17,6 @@ SELECT "id_b" as 'address id',
 (SELECT house FROM accounts WHERE accounts.id = id_b) as 'house'
 FROM basket WHERE basket.customer_id = 2;
 3)просмтор данных о заказе
-SELECT (SELECT price FROM orders WHERE product.idp = id_i) as 'price',
-(SELECT name FROM product WHERE product.idp = (SELECT id_i FROM orders WHERE product.idp = id_i)) as 'name'
+SELECT (SELECT price FROM orders WHERE product.idp = id_o) as 'price',
+(SELECT name FROM product WHERE product.idp = (SELECT id_o FROM orders WHERE product.idp = id_o)) as 'name'
 FROM product WHERE product.idp = 2;
